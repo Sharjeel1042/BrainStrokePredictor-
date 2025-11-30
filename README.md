@@ -287,8 +287,8 @@ The model is evaluated using multiple metrics:
 
 | Metric | Score |
 |--------|-------|
-| Cross-Validation Accuracy | ~94-95% |
-| Test Set Accuracy | ~95% |
+| Cross-Validation Accuracy | ~74-75% |
+| Test Set Accuracy | ~75% |
 | F1-Score | Optimized for class imbalance |
 | ROC-AUC | High discrimination capability |
 
