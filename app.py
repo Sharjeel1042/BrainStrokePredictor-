@@ -17,7 +17,7 @@ heartDisease=st.radio("Is the patient suffering from any heart disease?",("Yes",
 
 everMarried=st.radio("Is/was the patient married?",("Yes","No"))
 
-workType=st.radio("What is the patient's job?",("children","Private","Self-employed","Govt_Job","Never_worked"))
+workType=st.radio("What is the patient's job?",("Student","Private","Self-employed","Govt_Job","Never_worked"))
 
 residenceType=st.radio("What is the patient's residence type?",("Urban","Rural"))
 
@@ -47,4 +47,4 @@ if st.button("Predict"):
     stroke="Yes" if pred[0]==1 else "No"
     st.success(f"Patient has stroke: {stroke}")
     st.success(f"Confidence of patient not having stroke: {prob[0,0]*100:.2f}%")
-    st.success(f"Confidence of patint having stroke: {prob[0,1]*100:.2f}%")
+    st.success(f"Confidence of patient having stroke: {prob[0,1]*100:.2f}%")
