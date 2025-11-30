@@ -45,6 +45,11 @@ if st.button("Predict"):
     pred,prob=predictFromuserInput(userInput)
 
     stroke="Yes" if pred[0]==1 else "No"
+    confidence=None
+    if stroke=="Yes":
+        confidence=prob[0,0]
+    else:
+        confidence=prob[0,0]
+
     st.success(f"Patient has stroke: {stroke}")
-    st.success(f"Confidence of patient not having stroke: {prob[0,0]*100:.2f}%")
-    st.success(f"Confidence of patient having stroke: {prob[0,1]*100:.2f}%")
+    st.success(f"Confidence: {confidence*100:.2f}%")
