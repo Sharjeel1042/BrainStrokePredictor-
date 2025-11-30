@@ -7,6 +7,12 @@
 
 A comprehensive machine learning system for predicting stroke risk based on patient health metrics and demographic information. This project demonstrates end-to-end data science workflows including data preprocessing, feature engineering, model training with cross-validation, and deployment via an interactive web application.
 
+## 🌐 Live Demo
+
+**Try the application here:** [Brain Stroke Predictor](https://brain-stroke-predector.streamlit.app/)
+
+> Enter patient information and get instant stroke risk predictions powered by machine learning.
+
 ---
 
 ## 📋 Table of Contents
@@ -50,7 +56,9 @@ The system employs a **Support Vector Machine (SVM)** classifier integrated with
 
 ## 📊 Dataset
 
-The project uses the **Healthcare Dataset - Stroke Data** containing patient records with the following features:
+The project uses the **Healthcare Dataset - Stroke Data** from Kaggle, containing patient records with the following features:
+
+**Dataset Source**: [Stroke Prediction Dataset on Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
 ### Input Features
 - **Demographic**: Gender, Age, Marital Status, Residence Type
